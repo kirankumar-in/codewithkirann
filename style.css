@@ -1,0 +1,470 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background-color: #111111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #f7c948;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #f7c948;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f7c948;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 58px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #f7c948;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.batch {
+  
+  display: inline-block;
+  background: #f7c948;
+  color: #000000 !important;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px !important;
+  margin-bottom: 30px !important;
+  -webkit-text-fill-color: #000000;
+}
+
+
+.btn-main {
+  display: inline-block;
+  background: #f7c948;
+  color: #000000;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 15px;
+}
+
+.btn-main:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #f7c948;
+}
+
+/* ===== COURSES ===== */
+.courses {
+  padding: 80px 50px;
+  text-align: center;
+  background-color: #111111;
+}
+
+.courses h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #f7c948;
+}
+
+.course-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1a1a1a;
+  border: 2px solid #f7c948;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 320px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(247, 201, 72, 0.4);
+}
+
+.card-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f7c948;
+}
+
+.card ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.card ul li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: #cccccc;
+  border-bottom: 1px solid #222222;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 800;
+  color: #f7c948;
+  margin-bottom: 20px;
+}
+
+.btn-card {
+  display: inline-block;
+  background: #f7c948;
+  color: #000000;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.btn-card:hover {
+  transform: scale(1.05);
+}
+
+/* ===== PAYMENT ===== */
+.payment {
+  padding: 80px 50px;
+  text-align: center;
+  background-color: #0a0a0a;
+}
+
+.payment h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #f7c948;
+  margin-bottom: 40px;
+}
+
+.payment-steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.step {
+  background: #1a1a1a;
+  border: 2px solid #333333;
+  border-radius: 15px;
+  padding: 25px 20px;
+  width: 200px;
+}
+
+.step span {
+  display: inline-block;
+  background: #f7c948;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.step p {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.payment-box {
+  display: flex;
+  justify-content: center;
+}
+
+.qr-section {
+  background: #1a1a1a;
+  border: 2px solid #f7c948;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.qr-section p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.qr-placeholder {
+  width: 200px;
+  height: 200px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+.upi {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #f7c948;
+}
+
+/* ===== REGISTER FORM ===== */
+.register {
+  padding: 80px 50px;
+  background-color: #111111;
+  text-align: center;
+}
+
+.register h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #f7c948;
+  margin-bottom: 10px;
+}
+
+.sub {
+  color: #aaaaaa;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+#registrationForm {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #f7c948;
+  font-size: 15px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 2px solid #333333;
+  background: #1a1a1a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #f7c948;
+}
+
+.form-group select option {
+  background: #1a1a1a;
+}
+
+.form-group small {
+  color: #888888;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 16px;
+  background: #f7c948;
+  color: #000000;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-submit:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #f7c948;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  padding: 80px 50px;
+  text-align: center;
+  background-color: #0a0a0a;
+}
+
+.contact h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #f7c948;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  color: #aaaaaa;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.btn-instagram {
+  display: inline-block;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #ffffff;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.btn-instagram:hover {
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111111;
+  text-align: center;
+  padding: 25px;
+  color: #666666;
+  font-size: 14px;
+  border-top: 2px solid #f7c948;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .courses {
+    padding: 60px 20px;
+  }
+
+  .course-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment {
+    padding: 60px 20px;
+  }
+
+  .payment-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .register {
+    padding: 60px 20px;
+  }
+
+  .contact {
+    padding: 60px 20px;
+  }
+}
+.pay-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #f7c948;
+  color: #000000;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pay-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #f7c948;
+}

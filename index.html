@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code With Kirann</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">💻 Code With Kirann</div>
+    <ul class="nav-links">
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#register">Register</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Learn <span>Python</span> & <span>Java</span></h1>
+      <p>Live online classes by expert instructors</p>
+      <p class="batch">🔥 Next Batch Starting Soon — Only ₹349!</p>
+      <a href="#register" class="btn-main">Join Now →</a>
+    </div>
+  </section>
+
+  <!-- COURSES SECTION -->
+  <section class="courses" id="courses">
+    <h2>Our Courses</h2>
+    <div class="course-cards">
+
+      <div class="card">
+        <div class="card-icon">🐍</div>
+        <h3>Python Course</h3>
+        <ul>
+          <li>✅ Basics to Advanced</li>
+          <li>✅ Live Classes on Google Meet</li>
+          <li>✅ Study Materials Provided</li>
+          <li>✅ WhatsApp Group Support</li>
+          <li>✅ Beginner Friendly</li>
+        </ul>
+        <div class="price">₹349 only</div>
+        <a href="#register" class="btn-card">Enroll Now</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">☕</div>
+        <h3>Java Course</h3>
+        <ul>
+          <li>✅ Basics to Advanced</li>
+          <li>✅ Live Classes on Google Meet</li>
+          <li>✅ Study Materials Provided</li>
+          <li>✅ WhatsApp Group Support</li>
+          <li>✅ Beginner Friendly</li>
+        </ul>
+        <div class="price">₹349 only</div>
+        <a href="#register" class="btn-card">Enroll Now</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PAYMENT SECTION -->
+  <section class="payment" id="payment">
+    <h2>How to Pay 💳</h2>
+    <div class="payment-steps">
+      <div class="step">
+        <span>1</span>
+        <p>Scan QR Code below or use UPI ID</p>
+      </div>
+      <div class="step">
+        <span>2</span>
+        <p>Pay exactly <strong>₹349</strong></p>
+      </div>
+      <div class="step">
+        <span>3</span>
+        <p>Note your <strong>Transaction ID</strong></p>
+      </div>
+      <div class="step">
+        <span>4</span>
+        <p>Fill the form below & upload screenshot</p>
+      </div>
+    </div>
+
+    <div class="payment-box">
+      <div class="qr-section">
+        <p>📱 Scan to Pay</p>
+        <img src="myqr.jpeg" alt="PhonePe QR Code" style="
+          width: 200px;
+          height: 200px;
+          border-radius: 10px;
+          border: 3px solid #f7c948;
+        "/>
+        <p class="upi">UPI ID: <strong>9347325305-4@ybl</strong></p>
+
+<a href="upi://pay?pa=9347325305-4@ybl&pn=CodeWithKirann&am=349&cu=INR"
+   class="pay-btn">
+   💳 Pay ₹349 Now
+</a>
+
+<br><br>
+<small>Click the button to open PhonePe, Google Pay, or Paytm with ₹349 pre-filled.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTRATION FORM -->
+  <section class="register" id="register">
+    <h2>📝 Register Now</h2>
+    <p class="sub">Fill the form after completing payment</p>
+
+    <form id="registrationForm">
+
+      <div class="form-group">
+        <label>Full Name *</label>
+        <input type="text" id="name" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label>Village / College Name *</label>
+        <input type="text" id="village" placeholder="Enter your village or college" required />
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" id="phone" placeholder="Enter your WhatsApp number" required />
+      </div>
+
+      <div class="form-group">
+        <label>Select Course *</label>
+        <select id="course" required>
+          <option value="">-- Select Course --</option>
+          <option value="Python">🐍 Python Course - ₹349</option>
+          <option value="Java">☕ Java Course - ₹349</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Transaction ID *</label>
+        <input type="text" id="transactionId" placeholder="Enter your PhonePe Transaction ID" required />
+      </div>
+
+      <div class="form-group">
+        <label>Payment Screenshot *</label>
+        <input type="file" id="screenshot" accept="image/*" required />
+        <small>Upload your payment screenshot (JPG/PNG)</small>
+      </div>
+
+      <button type="submit" class="btn-submit">
+        ✅ Submit Registration
+      </button>
+
+    </form>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2>📬 Contact Us</h2>
+    <p>For any queries, reach us on Instagram</p>
+    <a href="https://instagram.com/codewithkirann" target="_blank" class="btn-instagram">
+      <i class="fab fa-instagram"></i> @codewithkirann
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Code With Kirann. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
