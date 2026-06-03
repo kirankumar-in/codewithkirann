@@ -1,13 +1,10 @@
 // ===== CONFIGURATION =====
-// IMPORTANT: Replace this URL with your Google Sheet Web App URL
-// We will create this URL in the next step
 const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbz2v_RV97A2RNhWSOgETsuVskYH5g3647g8IdDwiy6fWuG9VXo3Q0Oexri-3nS2MuttzA/exec";
 
 // ===== FORM SUBMISSION =====
 document.getElementById("registrationForm").addEventListener("submit", async function (e) {
   e.preventDefault();
 
-  // Get all form values
   const name = document.getElementById("name").value.trim();
   const village = document.getElementById("village").value.trim();
   const phone = document.getElementById("phone").value.trim();
@@ -156,14 +153,12 @@ function showThankYouPage(name, course) {
             ⚠️ Important
           </p>
           <p style="color: #cccccc; font-size: 14px;">
-            Make sure your WhatsApp number is active on
-            <strong style="color: #ffffff;">${document.getElementById ? '' : phone}</strong>
-            the phone number you registered with.
+            Make sure your WhatsApp number is active on the phone number you registered with.
           </p>
         </div>
 
         <a href="https://instagram.com/codewithkirann" target="_blank" style="
-          display: inline-block;
+          display: block;
           background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
           color: #ffffff;
           padding: 14px 35px;
@@ -172,7 +167,6 @@ function showThankYouPage(name, course) {
           font-weight: 700;
           text-decoration: none;
           margin-bottom: 15px;
-          display: block;
         ">📸 Follow us on Instagram</a>
 
         <p style="color: #666666; font-size: 13px;">
@@ -206,7 +200,6 @@ function showAlert(message, type) {
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
   `;
   document.body.appendChild(alert);
-
   setTimeout(() => alert.remove(), 4000);
 }
 
